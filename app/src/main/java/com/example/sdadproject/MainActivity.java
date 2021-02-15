@@ -1,6 +1,7 @@
 package com.example.sdadproject;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -25,6 +26,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Intent intent = new Intent(this, ForegroundS.class);
+        if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.O){
+            startForegroundService(intent);
+
+        }else{
+            startService(intent);
+        }
+
+
+
 
         loginButton = findViewById(R.id.login_button);
         callbackManager = CallbackManager.Factory.create();
