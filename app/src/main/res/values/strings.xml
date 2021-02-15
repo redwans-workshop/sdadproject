@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SDADproject</string>
+    <string name="facebook_app_id">251202536474131</string>
+    <string name="fb_login_protocol_scheme">fb251202536474131</string>
+    <string name="map_apikey">AIzaSyB3G_H8SyzCuqSKfd8LaWNyM6NZbMap2bU</string>
+
+</resources>
